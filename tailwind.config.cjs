@@ -10,7 +10,7 @@ const font = {
 	viga: ['Viga', 'Inter', ...defaultTheme.fontFamily.sans],
 	inter: ['InterVariable', 'Inter', ...defaultTheme.fontFamily.sans],
 	Mona: ['Mona Sans', 'serif'],
-	Hubot: ['Hubot Sans', 'serif'],
+	Hubot: ['Hubot Sans', 'serif']
 };
 
 /** @type {import('tailwindcss').Config} */
@@ -21,15 +21,16 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ['InterVariable', 'Inter', ...defaultTheme.fontFamily.sans],
+				sans: ['InterVariable', 'Inter', ...defaultTheme.fontFamily.sans]
 			},
 			colors: {
-				mono: colors.neutral,
+				mono: colors.neutral
 			},
 			transitionTimingFunction: {
 				smooth: 'cubic-bezier(0, 0, 0, 1.5)',
-			},
-		},
+				whip: `cubic-bezier(0.8, 0.3, 0.15, 1.1)`
+			}
+		}
 	},
 	plugins: [
 		require('@tailwindcss/typography'),
@@ -37,6 +38,6 @@ module.exports = {
 		plugin(function ({ addVariant }) {
 			addVariant('hocus', ['&:hover', '&:focus']);
 			addVariant('active', ['&.active']);
-		}),
-	],
+		})
+	]
 };
