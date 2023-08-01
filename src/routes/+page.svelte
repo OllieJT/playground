@@ -2,7 +2,7 @@
 	import { base } from '$app/paths';
 
 	type Project = { path: string; label: string };
-	const projects: Project[] = [];
+	const projects: Project[] = [{ label: 'Omni Menu', path: 'omni-menu' }];
 </script>
 
 <ol>

@@ -29,5 +29,6 @@
 		"**/.svelte-kit": true
 	},
 	"problems.sortOrder": "severity",
-	"todo-tree.tree.scanMode": "workspace only"
+	"todo-tree.tree.scanMode": "workspace only",
+	"editor.wordWrap": "off"
 }
